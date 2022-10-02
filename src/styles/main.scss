@@ -165,6 +165,7 @@ main {
       .introduction {
         display: flex;
         justify-content: center;
+
         flex-direction: column;
         padding: 4em;
 
@@ -184,9 +185,172 @@ main {
       }
     }
   }
+
+  // Origin
+  .my-origin {
+    min-height: 100vh;
+    padding-top: 8em;
+
+    h2 {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .origin-container {
+      display: flex;
+      padding: 3em;
+      gap: 2em;
+
+      p {
+        text-align: justify;
+      }
+
+      .me {
+        width: 500px;
+        height: 300px;
+      }
+
+      .map {
+        width: 500px;
+        height: 450px;
+        // background-color: rgba(219, 213, 213, 0.645);
+        // border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+
+        img {
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+        }
+      }
+
+      .detail {
+        width: 500px;
+        height: 450px;
+        a {
+          color: red;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    // Origin end
+
+    // places to visit
+
+    .Tz-destinations {
+      padding: 2em;
+      h3 {
+        font-size: 1.5em;
+      }
+      p {
+        padding-top: 1em;
+      }
+
+      .place-container {
+        margin: 3em 0;
+        display: flex;
+        gap: 2em;
+
+        .place {
+          width: 400px;
+          height: 300px;
+
+          img {
+            width: 400px;
+            height: 300px;
+          }
+        }
+
+        .detail {
+          width: 600px;
+          height: 300px;
+          padding: 1em;
+
+          p {
+            text-align: justify;
+          }
+
+          a {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .places {
+    min-height: 100vh;
+
+    h2 {
+      padding-top: 5em;
+      text-align: center;
+    }
+
+    .visited-container {
+      background-color: aqua;
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      padding: 3em;
+      justify-content: center;
+
+      .one,
+      .two,
+      .three,
+      .four,
+      .five {
+        width: 250px;
+        height: 300px;
+
+        img {
+          width: 250px;
+          height: 300px;
+        }
+      }
+    }
+  }
 }
 
+// @media screen and (max-width: 431px) {
+//   html,
+//   body {
+//     width: 100%;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     overflow-x: hidden;
+//   }
+//   main {
+//     .my-origin {
+//       min-height: 100vh;
+
+//       .origin-container {
+//         min-height: 100vh;
+//         flex-wrap: wrap;
+//         width: 100vw;
+
+//         .map {
+//           margin-right: 1em;
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media screen and (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
   header {
     nav {
       .navigation {
@@ -215,6 +379,31 @@ main {
           li a:hover {
             padding: 30px;
             font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    .my-origin {
+      min-height: 100vh;
+
+      .origin-container {
+        min-height: 100vh;
+        flex-wrap: wrap;
+        width: 100vw;
+
+        .map {
+          justify-content: center;
+        }
+      }
+
+      .Tz-destinations {
+        .place-container {
+          flex-wrap: wrap;
+
+          .detail {
+            min-height: 100vh;
           }
         }
       }

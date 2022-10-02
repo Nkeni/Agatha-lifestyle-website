@@ -153,8 +153,120 @@ main .home .mypicture .introduction h3 {
   letter-spacing: 0.1em;
   padding-top: 0.5em;
 }
+main .my-origin {
+  min-height: 100vh;
+  padding-top: 8em;
+}
+main .my-origin h2 {
+  font-size: 2em;
+  text-align: center;
+}
+main .my-origin .origin-container {
+  display: flex;
+  padding: 3em;
+  gap: 2em;
+}
+main .my-origin .origin-container p {
+  text-align: justify;
+}
+main .my-origin .origin-container .me {
+  width: 500px;
+  height: 300px;
+}
+main .my-origin .origin-container .map {
+  width: 500px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+main .my-origin .origin-container .map img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+main .my-origin .origin-container .detail {
+  width: 500px;
+  height: 450px;
+}
+main .my-origin .origin-container .detail a {
+  color: red;
+  font-size: 1.2em;
+}
+main .my-origin .Tz-destinations {
+  padding: 2em;
+}
+main .my-origin .Tz-destinations h3 {
+  font-size: 1.5em;
+}
+main .my-origin .Tz-destinations p {
+  padding-top: 1em;
+}
+main .my-origin .Tz-destinations .place-container {
+  margin: 3em 0;
+  display: flex;
+  gap: 2em;
+}
+main .my-origin .Tz-destinations .place-container .place {
+  width: 400px;
+  height: 300px;
+}
+main .my-origin .Tz-destinations .place-container .place img {
+  width: 400px;
+  height: 300px;
+}
+main .my-origin .Tz-destinations .place-container .detail {
+  width: 600px;
+  height: 300px;
+  padding: 1em;
+}
+main .my-origin .Tz-destinations .place-container .detail p {
+  text-align: justify;
+}
+main .my-origin .Tz-destinations .place-container .detail a {
+  color: red;
+}
+main .places {
+  min-height: 100vh;
+}
+main .places h2 {
+  padding-top: 5em;
+  text-align: center;
+}
+main .places .visited-container {
+  background-color: aqua;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 3em;
+  justify-content: center;
+}
+main .places .visited-container .one,
+main .places .visited-container .two,
+main .places .visited-container .three,
+main .places .visited-container .four,
+main .places .visited-container .five {
+  width: 250px;
+  height: 300px;
+}
+main .places .visited-container .one img,
+main .places .visited-container .two img,
+main .places .visited-container .three img,
+main .places .visited-container .four img,
+main .places .visited-container .five img {
+  width: 250px;
+  height: 300px;
+}
 
 @media screen and (max-width: 800px) {
+  html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
   header nav .navigation .hambg,
 header nav .navigation .toggle-menu {
     display: block;
@@ -179,5 +291,22 @@ header nav .navigation .toggle-menu {
 header nav .navigation .menu li a:hover {
     padding: 30px;
     font-size: 20px;
+  }
+  main .my-origin {
+    min-height: 100vh;
+  }
+  main .my-origin .origin-container {
+    min-height: 100vh;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  main .my-origin .origin-container .map {
+    justify-content: center;
+  }
+  main .my-origin .Tz-destinations .place-container {
+    flex-wrap: wrap;
+  }
+  main .my-origin .Tz-destinations .place-container .detail {
+    min-height: 100vh;
   }
 }
