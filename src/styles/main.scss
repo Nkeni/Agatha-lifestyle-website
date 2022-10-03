@@ -32,10 +32,10 @@ header {
         animation-iteration-count: infinite;
         margin-left: 1em;
 
-        span {
-          color: black;
-          font-size: 1.2em;
-        }
+        // span {
+        //   color: black;
+        //   font-size: 1.2em;
+        // }
       }
     }
     .navigation {
@@ -146,6 +146,7 @@ header {
 
 // MAIN START
 main {
+  min-height: calc(100vh - 20px);
   .home {
     min-height: 100vh;
     display: flex;
@@ -158,7 +159,7 @@ main {
 
       img {
         height: 700px;
-        width: 500px;
+        width: auto;
         padding-top: 8em;
       }
 
@@ -213,11 +214,9 @@ main {
       .map {
         width: 500px;
         height: 450px;
-        // background-color: rgba(219, 213, 213, 0.645);
-        // border-radius: 7px;
+
         display: flex;
         justify-content: center;
-        // align-items: center;
 
         img {
           width: 250px;
@@ -255,12 +254,10 @@ main {
         gap: 2em;
 
         .place {
-          width: 400px;
-          height: 300px;
-
           img {
-            width: 400px;
-            height: 300px;
+            width: 300px;
+            height: auto;
+            //border-radius: 50%;
           }
         }
 
@@ -283,14 +280,19 @@ main {
 
   .places {
     min-height: 100vh;
+    background-color: rgba(211, 209, 209, 0.913);
 
     h2 {
       padding-top: 5em;
       text-align: center;
     }
 
+    p {
+      padding: 2em 0;
+      text-align: center;
+    }
+
     .visited-container {
-      background-color: aqua;
       width: 100vw;
       display: flex;
       flex-wrap: wrap;
@@ -298,48 +300,30 @@ main {
       padding: 3em;
       justify-content: center;
 
-      .one,
-      .two,
-      .three,
-      .four,
-      .five {
-        width: 250px;
-        height: 300px;
-
+      .one {
         img {
-          width: 250px;
-          height: 300px;
+          width: auto;
+          height: 200px;
+        }
+        h4 {
+          margin-top: 0.5em;
+          text-align: center;
         }
       }
     }
   }
+  // visited places end
 }
 
-// @media screen and (max-width: 431px) {
-//   html,
-//   body {
-//     width: 100%;
-//     height: 100%;
-//     margin: 0;
-//     padding: 0;
-//     overflow-x: hidden;
-//   }
-//   main {
-//     .my-origin {
-//       min-height: 100vh;
-
-//       .origin-container {
-//         min-height: 100vh;
-//         flex-wrap: wrap;
-//         width: 100vw;
-
-//         .map {
-//           margin-right: 1em;
-//         }
-//       }
-//     }
-//   }
-// }
+// footer
+footer {
+  height: 20px;
+  p {
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+  }
+}
 
 @media screen and (max-width: 800px) {
   html,

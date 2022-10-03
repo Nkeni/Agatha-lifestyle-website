@@ -30,10 +30,6 @@ header nav .logo h2 {
   animation-iteration-count: infinite;
   margin-left: 1em;
 }
-header nav .logo h2 span {
-  color: black;
-  font-size: 1.2em;
-}
 header nav .navigation {
   display: flex;
   justify-content: space-between;
@@ -120,6 +116,9 @@ header nav .navigation input:checked ~ .menu {
   right: 0;
 }
 
+main {
+  min-height: calc(100vh - 20px);
+}
 main .home {
   min-height: 100vh;
   display: flex;
@@ -132,7 +131,7 @@ main .home .mypicture {
 }
 main .home .mypicture img {
   height: 700px;
-  width: 500px;
+  width: auto;
   padding-top: 8em;
 }
 main .home .mypicture .introduction {
@@ -206,13 +205,9 @@ main .my-origin .Tz-destinations .place-container {
   display: flex;
   gap: 2em;
 }
-main .my-origin .Tz-destinations .place-container .place {
-  width: 400px;
-  height: 300px;
-}
 main .my-origin .Tz-destinations .place-container .place img {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: auto;
 }
 main .my-origin .Tz-destinations .place-container .detail {
   width: 600px;
@@ -227,13 +222,17 @@ main .my-origin .Tz-destinations .place-container .detail a {
 }
 main .places {
   min-height: 100vh;
+  background-color: rgba(211, 209, 209, 0.913);
 }
 main .places h2 {
   padding-top: 5em;
   text-align: center;
 }
+main .places p {
+  padding: 2em 0;
+  text-align: center;
+}
 main .places .visited-container {
-  background-color: aqua;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
@@ -241,21 +240,22 @@ main .places .visited-container {
   padding: 3em;
   justify-content: center;
 }
-main .places .visited-container .one,
-main .places .visited-container .two,
-main .places .visited-container .three,
-main .places .visited-container .four,
-main .places .visited-container .five {
-  width: 250px;
-  height: 300px;
+main .places .visited-container .one img {
+  width: auto;
+  height: 200px;
 }
-main .places .visited-container .one img,
-main .places .visited-container .two img,
-main .places .visited-container .three img,
-main .places .visited-container .four img,
-main .places .visited-container .five img {
-  width: 250px;
-  height: 300px;
+main .places .visited-container .one h4 {
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+footer {
+  height: 20px;
+}
+footer p {
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 800px) {
