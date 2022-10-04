@@ -123,6 +123,7 @@ main .home {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: rgba(211, 209, 209, 0.913);
 }
 main .home .mypicture {
@@ -162,8 +163,8 @@ main .my-origin h2 {
 }
 main .my-origin .origin-container {
   display: flex;
+  justify-content: space-around;
   padding: 3em;
-  gap: 2em;
 }
 main .my-origin .origin-container p {
   text-align: justify;
@@ -203,6 +204,7 @@ main .my-origin .Tz-destinations p {
 main .my-origin .Tz-destinations .place-container {
   margin: 3em 0;
   display: flex;
+  justify-content: center;
   gap: 2em;
 }
 main .my-origin .Tz-destinations .place-container .place img {
@@ -212,7 +214,6 @@ main .my-origin .Tz-destinations .place-container .place img {
 main .my-origin .Tz-destinations .place-container .detail {
   width: 600px;
   height: 300px;
-  padding: 1em;
 }
 main .my-origin .Tz-destinations .place-container .detail p {
   text-align: justify;
